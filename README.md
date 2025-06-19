@@ -31,5 +31,19 @@ A command-line application for managing client data with search and duplicate de
 
 2. **Menu Options:**
    1. Search clients by name
+      - Partial matches
+      - Case insensitive
    2. Find duplicate emails
+      - Exact matching
+      - Case insensitive
    3. Exit
+  
+## Future Enhancements
+
+1. Extended Search
+2. API Integration
+3. Performance
+   1. Redis caching
+   2. Database backend
+   3. Background processing
+   4. Multi-field search
