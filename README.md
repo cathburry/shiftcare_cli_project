@@ -12,7 +12,7 @@ A command-line application for managing client data with search and duplicate de
 ## Setup
 
 1. **Prerequisites**:
-   - Ruby 2.7+
+   - Ruby 3.0+
    - Bundler (`gem install bundler`)
 
 2. **Installation**:
@@ -20,3 +20,16 @@ A command-line application for managing client data with search and duplicate de
    git clone https://github.com/cathburry/shiftcare_cli_project.git
    cd shiftcare_cli_project
    bundle install
+
+## Usage
+
+### Running the Application
+
+1. **First run** (will download client data automatically):
+   ```bash
+   ruby bin/run
+
+2. **Menu Options:**
+   1. Search clients by name
+   2. Find duplicate emails
+   3. Exit
