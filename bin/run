@@ -1,0 +1,15 @@
+require 'bundler/setup'
+require_relative '../lib/client_manager'
+require_relative '../lib/cli'
+
+data_source = ENV['CLIENT_DATA'] || 'https://appassets02.shiftcare.com/manual/clients.json'
+
+# Can implement proper remote fetching with error handling later on
+# For now, file is downloaded locally
+unless File.exist?('clients.json')
+  puts "Downloading client data..."
+  `curl -s #{data_source} > clients.json`
+end
+
+manager = ClientManager.new('clients.json')
+CLI.new(manager).run
